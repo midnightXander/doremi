@@ -5,5 +5,6 @@ app_name = 'api'
 
 urlpatterns = [
     path('upload/', views.Upload.as_view(), name='upload_song_file'),
+    path('similar-songs/', views.SimilarSongs.as_view(), name='similar_songs'),
     path('newsletter/<str:action>/', views.Newsletter.as_view(), name='newsletter'),
 ]
