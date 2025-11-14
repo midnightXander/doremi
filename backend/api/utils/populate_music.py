@@ -21,12 +21,12 @@ def is_track_in_file(track_id: str, file_path: Path) -> bool:
     return False
 
 BATCH_SIZE = 200
-offset = 1000
+offset = 4500
 
 #sample test
 # print(api.get_batch_songs(limit=10, offset=offset))
 
-while offset < 10001:  # Adjust the upper limit as needed
+while offset < 10000:  # Adjust the upper limit as needed
     songs = api.get_batch_songs(limit=BATCH_SIZE, offset=offset)
     if not songs:
         break  # No more songs to fetch
