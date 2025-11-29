@@ -12,7 +12,7 @@ TRACKS_FILE = OUT_DIR / "jamendo_tracks.jsonl"
 
 PEAKS_FEATURES_FILE = OUT_DIR / "local_peaks_features.jsonl"
 features_list = []
-limit = 1500
+limit = 5500
 
 with open(PEAKS_FEATURES_FILE, "r", encoding="utf-8") as mf:
         for meta in mf:
