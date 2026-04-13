@@ -1,3 +1,4 @@
-npm install 
-npx expo start 
+/*npm install 
+---------------------
+/*npx expo start 
 
